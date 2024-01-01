@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#9976D8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to OTP  Generator"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:layout_gravity="center"
+     android:layout_marginTop="20dp"
+        />
+<TextView
+    android:layout_gravity="center"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="30dp"
+    android:layout_width="370dp"
+    android:layout_height="80dp"
+    android:textSize="21sp"
+
+    android:textColor="#E91E63"
+    android:text="Please enter Your Mobile Number to Generate OTP"/>
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="321dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+         android:layout_gravity="center"
+        android:background="#fff"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:paddingLeft="30dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8B000000" />
+<Button
+android:id="@+id/generatebtn"
+    android:text="Generate"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textviewdisplay"
+        android:layout_gravity="center"
+        android:textSize="21sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text=""/>
+<ProgressBar
+ android:outlineAmbientShadowColor="#fff"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressbar"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"/>
+    <com.chaos.view.PinView
+android:visibility="gone"
+        android:id="@+id/pinview"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="#FFFFFF"
+        app:lineColor="@color/black"
+        app:hideLineWhenFilled="false"
+        android:textColor="#000"
+        app:itemCount="4"
+        app:itemHeight="50dp"
+        app:itemRadius="10dp"
+        app:itemWidth="50dp"
+         />
+
+<Button
+    android:visibility="gone"
+    android:id="@+id/verify"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:text="Verify"/>
+<Button
+    android:id="@+id/regenerate"
+    android:visibility="gone"
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Re-gererate"/>
+</LinearLayout>
